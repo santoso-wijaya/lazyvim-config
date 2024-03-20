@@ -4,7 +4,6 @@
 
 local opt = vim.opt
 
-opt.encoding = "UTF-8"
 opt.ruler = true
 opt.colorcolumn = { 80, 120 }
 
@@ -13,6 +12,17 @@ opt.swapfile = true
 opt.directory = ".swp/,~/.swp/,/tmp//"
 opt.backupdir = ".backup/,~/.backup/,/tmp//"
 opt.undodir = ".undo/,~/.undo/,/tmp//"
+
+-- `vim.opt.list = true` in the default options. Customize what these invisible
+-- characters are rendered with, so they don't distract us too much.
+-- By using uncommon Unicode characters, they won't be mistaken for text content.
+opt.listchars = {
+  tab = "·↹",
+  trail = "·",
+  nbsp = "␣",
+  extends = "▶",
+  precedes = "◀",
+}
 
 vim.o.guifont = "MonaspiceNe Nerd Font,FiraCode Nerd Font,Monaspace Neon,Fira Code"
 
