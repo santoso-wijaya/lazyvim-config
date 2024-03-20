@@ -2,8 +2,21 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
+local opt = vim.opt
+
+opt.encoding = "UTF-8"
+opt.ruler = true
+opt.colorcolumn = { 80, 120 }
+
+-- Do not clutter the current directory with swap, backup, undo files.
+opt.swapfile = true
+opt.directory = ".swp/,~/.swp/,/tmp//"
+opt.backupdir = ".backup/,~/.backup/,/tmp//"
+opt.undodir = ".undo/,~/.undo/,/tmp//"
+
 vim.o.guifont = "MonaspiceNe Nerd Font,FiraCode Nerd Font,Monaspace Neon,Fira Code"
 
+-- NeoVide specific settings
 if vim.g.neovide then
   vim.g.neovide_theme = "auto" -- dark/light matches current system settings
   vim.g.neovide_input_macos_alt_is_meta = true
