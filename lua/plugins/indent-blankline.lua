@@ -16,6 +16,7 @@ local function get_highlight_names()
   return keyset
 end
 
+-- Customize the "ibl" plugin that is already packaged with LazyVim with rainbow colors!
 return {
   "lukas-reineke/indent-blankline.nvim",
   opts = { indent = { highlight = get_highlight_names() } },
@@ -29,6 +30,7 @@ return {
       end
     end)
 
+    -- `plugin.main` is "ibl"
     require(plugin.main).setup(opts)
   end,
 }
