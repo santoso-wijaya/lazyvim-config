@@ -17,7 +17,7 @@ opt.undodir = ".undo/,~/.undo/,/tmp//"
 -- characters are rendered with, so they don't distract us too much.
 -- By using uncommon Unicode characters, they won't be mistaken for text content.
 opt.listchars = {
-  tab = "»·",
+  tab = "»-»",
   trail = "·",
   nbsp = "␣",
   extends = "▶",
