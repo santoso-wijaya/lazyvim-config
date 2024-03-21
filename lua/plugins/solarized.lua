@@ -13,8 +13,9 @@ return {
         keywords = { bold = false },
       },
       enables = {
-        -- The default highlight colors that comes with this colorscheme is too dark for my taste;
-        -- Tweak in the `highlights` table below.
+        -- For indentblankline ("ibl"), the default highlight colors that comes
+        -- with this colorscheme is too dark for my taste; tweak in the
+        -- `highlights` table below.
         indentblankline = false,
       },
       highlights = function(colors)
