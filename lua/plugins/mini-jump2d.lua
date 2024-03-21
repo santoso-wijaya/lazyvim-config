@@ -4,18 +4,27 @@ return {
   version = "*",
   opts = {
     labels = "hklyuiopnm,qwertzxcvbasdgjf;",
+    dim = true,
     mappings = {
-      start_jumping = "<Leader><Leader>",
+      start_jumping = "<Leader>j",
     },
   },
   config = function(plugin, opts)
     require(plugin.main).setup(opts)
-    vim.api.nvim_set_hl(0, "MiniJump2dSpot", {
-      ctermfg = 1,
-      fg = "Red",
-      bold = true,
-      undercurl = true,
-      guibg = nil,
+
+    -- Set up the highlight group for the jump spots as a colorscheme hook.
+    -- Some NeoVim implementation like NeoVide may override this otherwise.
+    vim.api.nvim_create_autocmd("ColorScheme", {
+      pattern = "*",
+      callback = function()
+        vim.api.nvim_set_hl(0, "MiniJump2dSpot", {
+          ctermfg = 1,
+          fg = "Red",
+          italic = true,
+          undercurl = true,
+          guibg = nil,
+        })
+      end,
     })
   end,
 }
