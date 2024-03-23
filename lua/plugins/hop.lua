@@ -43,11 +43,11 @@ return {
       h = {
         name = "hop", -- the group name; shows up in a window dressing
         -- <leader>hw => hints for all words in the buffer; most useful hop command!
-        w = { "<cmd>HopWord<cr>", "Hints to hop to all words in the visible buffer; most useful!" },
+        w = { "<cmd>HopWord<cr>", "Hop to all words in the visible buffer; most useful!" },
         -- <leader>hl => hints for hopping to the beginning of any visible line
-        l = { "<cmd>HopLine<cr>", "Hints to hop to the first column of each visible line" },
-        s = { "<cmd>HopLineStart<cr>", "Hints to hop to the first non-whitespace character of each line" },
-        v = { "<cmd>HopVertical<cr>", "Hints to hop to each line, keeping cursor column position the same" },
+        l = { "<cmd>HopLine<cr>", "Hop to the first column of each visible line" },
+        s = { "<cmd>HopLineStart<cr>", "Hop to the first non-whitespace character of each line" },
+        v = { "<cmd>HopVertical<cr>", "Hop to each line, keeping cursor column position the same" },
         -- <leader>h/ => enter search pattern => hints for hopping
         ["/"] = { "<cmd>HopPattern<cr>", "Validate search (`/`) with hints" },
         -- <leader>ha => hop anywhere
