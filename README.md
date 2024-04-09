@@ -6,3 +6,11 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 ## Modifications
 
 ==TODO==
+
+## Admin
+
+Headless sync plugins with:
+
+```sh
+nvim --headless "+Lazy! sync" +qa
+```
