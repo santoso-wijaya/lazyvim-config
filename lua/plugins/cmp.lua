@@ -1,3 +1,7 @@
+-- Disable my customizations here for now.
+-- stylua: ignore
+if true then return {} end
+
 return {
   -- Use <tab> for completion and snippets (supertab)
   -- first: disable default <tab> and <s-tab> behavior in LuaSnip
@@ -50,5 +54,15 @@ return {
         end, { "i", "s" }),
       })
     end,
+  },
+  -- Rust extras: crates
+  {
+    "Saecki/crates.nvim",
+    event = { "BufRead Cargo.toml" },
+    opts = {
+      completion = {
+        cmp = { enabled = true },
+      },
+    },
   },
 }
