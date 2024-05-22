@@ -29,7 +29,7 @@ vim.o.guifont = "MonaspiceNe Nerd Font,FiraCode Nerd Font,Monaspace Neon,Fira Co
 -- NeoVide specific settings
 if vim.g.neovide then
   vim.g.neovide_theme = "auto" -- dark/light matches current system settings
-  vim.g.neovide_input_macos_alt_is_meta = true
+  vim.g.neovide_input_macos_option_key_is_meta = "only_left"
   vim.g.neovide_cursor_vfx_mode = "pixiedust"
   vim.g.neovide_remember_window_size = true
 
