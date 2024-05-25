@@ -55,5 +55,5 @@ if vim.g.neovide then
     group = ime_input,
     pattern = "[/\\?]",
     callback = set_ime,
-  }) -- Put anything you want to happen only in Neovide here
+  })
 end
