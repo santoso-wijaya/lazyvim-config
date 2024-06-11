@@ -21,21 +21,7 @@ return {
         indentblankline = false,
       },
       highlights = function(colors)
-        -- TODO: Remove snippets lines 25-37 below once PR(#82) is merged.
-        -- https://github.com/maxmx03/solarized.nvim/pull/82
-        local colortool = require("solarized.utils.colors")
-        local darken = colortool.darken
-        local lighten = colortool.lighten
-
-        local lsp_inlay_hint_fg
-        if vim.o.background == "dark" then
-          lsp_inlay_hint_fg = darken(colors.base01, 30)
-        else
-          lsp_inlay_hint_fg = lighten(colors.base01, 30)
-        end
-
         return {
-          LspInlayHint = { fg = lsp_inlay_hint_fg },
           -- Highlight of indent character.
           IblIndent = { fg = colors.base01, nocombine = true },
           -- Highlight of indent character when base of current context.
