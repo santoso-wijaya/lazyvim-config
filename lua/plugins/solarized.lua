@@ -2,6 +2,7 @@ return {
   -- add Lua-scriptable solarized color scheme
   {
     "maxmx03/solarized.nvim",
+    branch = "main",
     lazy = false,
     name = "solarized",
     main = "solarized",
