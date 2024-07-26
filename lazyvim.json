@@ -14,6 +14,7 @@
     "lazyvim.plugins.extras.lang.ruby",
     "lazyvim.plugins.extras.lang.rust",
     "lazyvim.plugins.extras.lang.toml",
+    "lazyvim.plugins.extras.lang.typescript",
     "lazyvim.plugins.extras.lang.yaml",
     "lazyvim.plugins.extras.lsp.none-ls",
     "lazyvim.plugins.extras.ui.mini-indentscope",
@@ -21,7 +22,7 @@
     "lazyvim.plugins.extras.util.mini-hipatterns"
   ],
   "news": {
-    "NEWS.md": "6077"
+    "NEWS.md": "6520"
   },
   "version": 6
 }
