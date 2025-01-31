@@ -30,7 +30,6 @@ return {
       end
     end)
 
-    -- `plugin.main` is "ibl"
-    require(plugin.main).setup(opts)
+    require("ibl").setup(opts)
   end,
 }
