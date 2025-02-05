@@ -14,3 +14,10 @@ Headless sync plugins with:
 ```sh
 nvim --headless "+Lazy! sync" +qa
 ```
+
+## Suystem requirements
+
+```sh
+$ brew install fzf fd
+```
+
