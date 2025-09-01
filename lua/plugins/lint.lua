@@ -5,7 +5,12 @@ return {
       linters = {
         -- List of rules: https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md#rules
         markdownlint = {
-          args = { "--disable", "MD033", "--" }, -- Disable "no inline HTML" rule
+          args = {
+            "--disable",
+            "MD013", -- Disable line length rule
+            "MD033", -- Disable "no inline HTML" rule
+            "--",
+          },
         },
       },
     },
